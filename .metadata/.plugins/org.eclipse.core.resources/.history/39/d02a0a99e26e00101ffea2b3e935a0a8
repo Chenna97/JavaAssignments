@@ -1,0 +1,38 @@
+package com.over.quest1;
+
+import java.util.Scanner;
+
+public class OverloadMain {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the name of Employee");
+		String name = sc.next();
+		
+		System.out.println("Enter the Designation of employee as Manager/Programmer/Director"); 
+		
+		String designation=sc.next();
+			
+		Employee employee1= new Employee(name, designation);
+		
+		
+		switch (designation.toLowerCase()) {
+		
+		case "manager":
+			
+		
+		
+		
+		default:
+			break;
+		
+		
+		
+		}
+		
+
+	}
+
+}

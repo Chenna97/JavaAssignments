@@ -1,0 +1,33 @@
+package com.basics.quest2;
+
+public class Bank {
+	
+	double balance;
+	
+	
+	
+	
+	 public Bank(double balance) {
+		super();
+		this.balance = balance;
+	}
+
+	 void withdraw(double amount) {
+		 
+		 if(balance > 0 && (balance-amount !=0) ){
+			 System.out.println("you can withdraw money of : ");
+		 }
+		 
+	 }
+	 
+	 void deposit(double amount) {
+		 
+		 System.out.println("Deposited successfully of "+amount + " into you account");
+		 
+	 }
+	 
+	 double getBalance{
+		 
+		 return balance;
+	 }
+}

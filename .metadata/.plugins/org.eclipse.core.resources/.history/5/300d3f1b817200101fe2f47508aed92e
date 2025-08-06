@@ -1,0 +1,55 @@
+package com.abs.quest1;
+
+
+
+public class Manager extends Employee {
+
+	
+	
+	String activity;
+	
+	
+	
+	
+	public Manager(String empName, double salary, int empId, String activity) {
+		super(empName, salary, empId);
+		this.activity = activity;
+	}
+
+	void funClub(){
+		
+		   //print("Activity "+activity);
+		
+		System.out.println("Activity "+activity);
+		 }
+	
+	@Override
+	void printDetails()
+	{
+		//print all the instance variables
+		System.out.println("Employee Name is ::" + empName);
+		System.out.println("Salary of Employee is :: " + salary);
+		System.out.println("Employee ID is :: "+ empId);
+		System.out.println("Company Name is :: "+ COMPANYNAME);
+	
+	} 
+	
+	@Override
+	void calcBonus(double amount) {
+		
+	
+		
+		amount+= salary;
+		
+		System.out.println("Calculate Bonus "+amount);
+		
+	}
+
+	@Override
+	void showProjects() {
+		System.out.println("Total Projects are completed by  "+empName + "Within time");
+		
+	}
+	
+
+}

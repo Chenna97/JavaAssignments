@@ -1,0 +1,106 @@
+package com.inher.quest2;
+
+import java.util.Scanner;
+
+public class ATMMain {
+
+	public static void main(String[] args) {
+		
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the Balance account in your Union Bank account");
+		double balance= sc.nextDouble();
+		System.out.println("Initial Balance is :: " + balance);
+		Account account;
+		System.out.println("Welcome to Virtual ATM");
+        System.out.println("Choose Account Type: ");
+        System.out.println("1. Savings");
+        System.out.println("2. Current");
+        int accChoice = sc.nextInt();
+        if (accChoice == 1) {
+            account = new Savings(balance);
+        } else if (accChoice == 2) {
+            account = new Current(balance);
+        } else {
+            System.out.println("Invalid account type selected.");
+            sc.close();
+            return;
+        }
+
+		double amount= 0.0;
+		System.out.println("Enter the amount to withdraw/deposit from Savings account");
+		amount=sc.nextDouble();
+		
+		 int option;
+	        do {
+	            System.out.println("\nATM Menu:");
+	            System.out.println("1. Deposit");
+	            System.out.println("2. Withdraw");
+	            System.out.println("3. Check Balance");
+	            System.out.println("4. Exit");
+	            System.out.print("Choose an option: ");
+	            option = scanner.nextInt();
+
+	            switch (option) {
+	                case 1:
+	                    System.out.print("Enter amount to deposit: ");
+	                    double depositAmount = scanner.nextDouble();
+	                    account.deposit(depositAmount);
+	                    break;
+	                case 2:
+	                    System.out.print("Enter amount to withdraw: ");
+	                    double withdrawAmount = scanner.nextDouble();
+	                    account.withdraw(withdrawAmount);
+	                    break;
+	                case 3:
+	                    System.out.println("Current Balance: " + account.getBalance());
+	                    break;
+	                case 4:
+	                    System.out.println("Thank you for using Virtual ATM!");
+	                    break;
+	                default:
+	                    System.out.println("Invalid option.");
+	            }
+	        } while (option != 4);
+
+	        sc.close();
+		
+		/*switch (accountchoice.toLowerCase()) {
+		
+		
+		 * case "saving":
+		 * 
+		 * 
+		 * Account savingaccount = new Savings(amount);
+		 * System.out.println("Deposit amount from Saving account is  " +amount);
+		 * savingaccount .deposit(amount);
+		 * 
+		 * System.out.println("Withdraw amount from Saving account is  " +amount);
+		 * savingaccount.withdraw(amount); savingaccount.getBalance();
+		 * 
+		 * break;
+		 * 
+		 * case "current":
+		 * 
+		 * Account currentaccount = new Current(amount);
+		 * System.out.println("Deposit amount from Saving account is  " +amount);
+		 * currentaccount .deposit(amount);
+		 * 
+		 * System.out.println("Withdraw amount from Saving account is  " +amount);
+		 * currentaccount.withdraw(amount); currentaccount.getBalance();
+		 * 
+		 * break;
+		 * 
+		 * default :
+		 * 
+		 * System.out.println("Welcome to Union Bank :: ");
+		 */
+		}
+		
+		
+		sc.close();
+		
+		
+
+	}
+
+}

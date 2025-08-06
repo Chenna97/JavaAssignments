@@ -1,0 +1,37 @@
+package com.training.scan;
+
+import java.util.Scanner;
+
+public class Registration {
+
+	public static void main(String[] args) {
+	
+		String[] usernames = {"chenna", "Shiva", "kailash"};
+		Scanner sc= new Scanner(System.in);
+		
+        System.out.print("Enter name to register: ");
+        String newName = sc .nextLine().trim().toLowerCase(); 
+		
+		
+		 boolean isexistingname = false;
+		
+		for(String username : usernames) {
+			
+			if (username.equalsIgnoreCase(newName)) {
+				isexistingname = true;
+                break;
+            }
+			
+		
+		}
+		
+		 if (isexistingname) {
+	            System.out.println("Name is not unique.");
+	        } else {
+	            System.out.println("You are registered.");
+	        }
+		
+		sc.close();
+	}
+
+}

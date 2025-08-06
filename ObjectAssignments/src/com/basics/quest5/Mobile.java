@@ -1,0 +1,26 @@
+package com.basics.quest5;
+
+public class Mobile {
+	
+	String model;
+	String brand;
+	String color;
+	long price;
+	public Mobile(String model, String brand, String color,long price) {
+		super();
+		this.model = model;
+		this.brand = brand;
+		this.color = color;
+		this.price = price;
+	}
+	
+	void getDetails() {
+		
+		System.out.println("Mobile Model is :: "+ model);
+		System.out.println("Mobile brand  is :: "+ brand);
+		System.out.println("Mobile color is :: "+ color);
+		System.out.println("Mobile cost is :: "+ price);
+	}
+	
+
+}

@@ -1,0 +1,15 @@
+package com.over.quest2;
+
+public class MessengerMain {
+
+	public static void main(String[] args) {
+		
+		Messenger message = new Messenger ();
+		
+		message.sendMail("Hello.");
+		message.sendMail("chennakesavavennapusa2509@example.com", "Meeting is scheduled at 3 PM.");
+		message.sendMail("chennakesavavennapusa2509@example.com", "Project deadline extended to next week.", "Project Update");
+		
+	}
+
+}

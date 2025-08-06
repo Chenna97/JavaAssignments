@@ -1,0 +1,12 @@
+package com.basics.quest5;
+
+public class MobileMain {
+
+	public static void main(String[] args) {
+		
+		
+		Mobile mobile1 = new Mobile(“a”,”a”,29000); 
+
+	}
+
+}

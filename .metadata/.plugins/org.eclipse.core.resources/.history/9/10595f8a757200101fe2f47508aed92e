@@ -1,0 +1,11 @@
+package com.abs.quest1;
+
+public class Manager extends Employee {
+
+	public Manager(String empName, double salary, int empId) {
+		super(empName, salary, empId);
+		
+	}
+	
+
+}

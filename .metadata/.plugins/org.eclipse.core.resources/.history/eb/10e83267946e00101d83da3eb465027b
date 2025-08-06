@@ -1,0 +1,60 @@
+package com.basics.quest3;
+
+public class Student {
+	
+	String name ;
+	String department ;
+	public Student(String name, String department) {
+		super();
+		this.name = name;
+		this.department = department;
+	}
+	
+	void printDetails() {
+		
+		
+		System.out.println("Name of the student is : "+ name);
+		System.out.println("Student Department is : "+ department);
+		
+	}
+		
+	 public String getGrades(int[] marks){
+		 
+		 int sum=0;
+		 for(int mark : marks) {
+			 sum += mark;
+			 
+		 }
+		 
+		 double avg= sum / (double) marks.length;
+		 
+		 String grade;
+		 
+		 if(avg<=90 && avg >=100) {
+			 grade= "A";
+		 }
+		 else if (avg >=80) {
+			grade= "B";
+		}
+		 else if (avg >=70) {
+				grade= "C";
+			}
+			 
+		 else if (avg >=60) {
+				grade= "D";
+			}
+			 
+		 else if (avg >=50 && avg < 60) {
+				grade= "E";
+			}
+		 else {
+	            grade = "Fail";
+	        }
+
+	        System.out.println("Total Marks: " + sum);
+	        System.out.println("Average: " + average);
+	        return grade;
+		
+	 }
+
+}

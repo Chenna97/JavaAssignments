@@ -1,0 +1,24 @@
+package com.abs.quest1;
+
+import java.util.Scanner;
+
+public class DemoAbs {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		String choice = null;
+		
+		System.out.println("Eneter your choice as M for Manager / T for TeamLead / D for Developer ");
+		
+		
+		
+		
+		
+		
+	}
+
+}

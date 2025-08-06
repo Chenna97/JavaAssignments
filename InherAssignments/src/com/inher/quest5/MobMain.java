@@ -1,0 +1,27 @@
+package com.inher.quest5;
+
+public class MobMain {
+
+	public static void main(String[] args) {
+		
+		Mobile mobile = new FeaturePhone();
+		
+		mobile.call();
+		
+		Mobile smartMobile= new SmartPhone();
+		
+		smartMobile .call();
+		
+		SmartPhone smartPhone = (SmartPhone) smartMobile;
+		
+	String[] apps = 	smartPhone.apps();
+		
+		
+		for(String app : apps) {
+		System.out.print(" "+app);	
+		
+		}
+
+	}
+
+}

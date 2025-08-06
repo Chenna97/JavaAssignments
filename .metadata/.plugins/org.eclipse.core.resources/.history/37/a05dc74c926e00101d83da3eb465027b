@@ -1,0 +1,41 @@
+package com.basics.quest2;
+
+import java.util.Scanner;
+
+public class BankMain {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter you choice to withdraw or Deposit Money from ATM. " );
+		
+		String Choice = sc.next();
+		
+		
+		Bank bank = new Bank(1000.0);
+		switch(Choice.toUpperCase()) {
+		
+		case "WITHDRAW":
+			System.out.println("Enter  amount to withdraw from ATM. " );
+			double amt = sc.nextDouble();
+			bank.withdraw(amt);
+			break;
+		case "DEPOSIT":
+			System.out.println("Enter  amount to  deposit to your account. " );
+			double dept = sc.nextDouble();
+			bank.deposit(dept);
+			break;
+		default :	
+			
+			System.out.println("Welcome to Kesava Bank");
+			
+			
+		}
+		
+		bank.getBalance();
+		
+		sc.close();
+
+	}
+
+}

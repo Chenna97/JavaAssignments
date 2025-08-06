@@ -1,0 +1,5 @@
+package com.abs.quest1;
+
+public abstract class Employee {
+
+}

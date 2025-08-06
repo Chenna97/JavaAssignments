@@ -1,0 +1,53 @@
+package com.training.scan;
+
+import java.util.ArrayList;
+
+import java.util.Scanner;
+
+public class Login {
+
+	public static void main(String[] args) {
+	
+		ArrayList<String> usernames = new ArrayList<>();
+        usernames.add("Chenna");
+        usernames.add("kesava");
+        usernames.add("Reddy");
+		Scanner sc= new Scanner(System.in);
+		
+        System.out.print("Enter username to login: ");
+        String newName = sc .nextLine().trim().toLowerCase(); 
+		
+		
+		 boolean isexistingname = false;
+		
+		for(String username : usernames) {
+			
+			if (username.equalsIgnoreCase(newName)) {
+				isexistingname = true;
+                break;
+            }
+		
+		
+		}
+		
+		 if (isexistingname) {
+	            System.out.println("You are logged in successfully");
+	        } else {
+	        	usernames.add(newName);
+	            System.out.println("”Invalid username.");
+	            
+	        }
+		 
+		 System.out.println("List of Usernames  after register:");
+		 
+		 for(String username : usernames) {
+				System.out.print (" "+username);
+		 }
+			 
+		 
+		 
+		
+		sc.close();
+	}
+
+}

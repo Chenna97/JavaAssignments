@@ -1,0 +1,22 @@
+package com.inher.quest4;
+
+public class MailCommunciation extends Communication {
+	
+	@Override
+	void sendMessage()
+	
+	{ 
+		//print(communication using mail service)
+		System.out.println("communication using mail service");
+		
+	}
+	
+	
+	
+	String[] showTypes(){ 
+		
+		return new String[] {"email","telegram", "letter"}; 
+		
+	}
+
+}

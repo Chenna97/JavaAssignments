@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="com.basics.quest4.Training"/>
+    <fullyQualifiedTypeName name="com.over.quest1.Employee"/>
+    <fullyQualifiedTypeName name="com.inher.quest1.Project"/>
+    <fullyQualifiedTypeName name="com.inher.quest1.TeamOne"/>
+    <fullyQualifiedTypeName name="com.inher.quest1.TeamTwo"/>
+    <fullyQualifiedTypeName name="com.inher.quest2.Account"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="com.inher.quest3.Figures"/>
+    <fullyQualifiedTypeName name="com.inher.quest4.Communication"/>
+    <fullyQualifiedTypeName name="com.inher.quest4.MailCommunciation"/>
+    <fullyQualifiedTypeName name="com.inher.quest4.SMSCommunciation"/>
+    <fullyQualifiedTypeName name="com.inher.quest4.WhatsappCommunciation"/>
+    <fullyQualifiedTypeName name="com.inher.quest4.PhoneCommunciation"/>
+    <fullyQualifiedTypeName name="java.lang.Module"/>
+    <fullyQualifiedTypeName name="com.inher.quest5.FeaturePhone"/>
+    <fullyQualifiedTypeName name="com.inher.quest5.Mobile"/>
+    <fullyQualifiedTypeName name="com.inher.quest5.SmartPhone"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.abs.quest1.Employee"/>
+    <fullyQualifiedTypeName name="com.abs.quest1.Manager"/>
+    <fullyQualifiedTypeName name="com.abs.quest1.TeamLead"/>
+    <fullyQualifiedTypeName name="java.lang.Deprecated"/>
+    <fullyQualifiedTypeName name="com.abs.quest1.Developer"/>
+</qualifiedTypeNameHistroy>

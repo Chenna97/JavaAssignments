@@ -1,0 +1,33 @@
+package com.over.quest2;
+
+public class Messenger {
+	
+	
+	
+	
+	void sendMail(String message)
+	{
+		System.out.println(" Mail Meesage is : " + message);
+		
+	}
+	
+	void sendMail(String tousername, String message)
+	
+	{
+		System.out.println(" Mail Meesage is : " + message);
+		System.out.println("  TouserName is : " + tousername);
+		
+	}
+	
+	void sendMail(String tousername, String message,String subject)
+	
+	{
+	 
+		System.out.println(" Mail Meesage is : " + message);
+		System.out.println(" TouserName is : " + tousername);
+		System.out.println(" Subject is : " + subject);
+		
+	}
+	
+
+}

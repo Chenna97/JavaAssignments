@@ -1,0 +1,52 @@
+package com.inher.quest4;
+
+import java.util.Scanner;
+
+public class CommMain {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		Communication communication;
+		System.out.println("Choose communication type :");
+		System.out.println("1. MailCommunciation ");
+		System.out.println("2. SMSCommunciation");
+		System.out.println("3. PhoneCommunciation ");
+		System.out.println("4. WhatsappCommunciation");
+		System.out.print("Enter choice (1-4): ");
+
+		int choice = sc.nextInt();
+
+		switch (choice) {
+		case 1:
+
+			communication = new MailCommunciation();
+			communication.sendMessage();
+			MailCommunciation mailComms = (MailCommunciation) communication;
+
+			String[] mailCommunications = mailComms.showTypes();
+
+			for (String mailCom : mailCommunications) {
+
+				System.out.print("  " + mailCom);
+			}
+			break;
+			
+		case 2 :
+			communication = new  SMSCommunciation();
+			communication.sendMessage();
+			SMSCommunciation smsCom = (SMSCommunciation)  communication;
+			smsCom.messageLength();
+			break;
+			
+		case 3 :
+			communication = new WhatsappCommunciation();
+			communication.sendMessage();
+			WhatsappCommunciation whatsappComm = new 
+
+		}
+
+		sc.close();
+	}
+
+}

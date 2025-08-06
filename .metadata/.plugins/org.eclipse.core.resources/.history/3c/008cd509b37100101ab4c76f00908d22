@@ -1,0 +1,36 @@
+package com.inher.quest1;
+
+public class CompanyMain {
+
+	public static void main(String[] args) {
+		
+		Project project =  new TeamOne(); 
+		// call the method of TeamOne 
+		project.doTask();
+		// Also call the own method of TeamOne 
+		TeamOne tone =(TeamOne) project;
+		String[] tools = {"eclipse","Jenkins","maven"};
+		tone.softwaresUsed(tools);
+		
+		System.out.println(" ");
+		
+		// Follow the same process for TeamTwo 
+//		Project project1 =  new TeamTwo(); 
+//		
+//		project1.doTask();
+		
+		TeamTwo ttwo = (TeamTwo) project;
+		
+	String[] techStack=	ttwo.getTechStack();
+	
+	for(String tech : techStack)
+		
+	{
+		System.out.print(" "+ tech);
+	}
+		
+		
+
+	}
+
+}

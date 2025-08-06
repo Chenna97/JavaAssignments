@@ -1,0 +1,54 @@
+package com.abs.quest1;
+
+public abstract class Employee {
+
+	String empName;
+	double salary;
+	int empId; 
+	final String COMPANYNAME="";
+	
+	public Employee(String empName, double salary, int empId) {
+		super();
+		this.empName = empName;
+		this.salary = salary;
+		this.empId = empId;
+	} 
+	
+	void printDetails()
+	{
+		//print all the instance variables
+		System.out.println("Employee Name is ::" + empName);
+		System.out.println("Salary of Employee is :: " + salary);
+		System.out.println("Employee ID is :: "+ empId);
+		System.out.println("Company Name is :: "+ COMPANYNAME);
+	
+	} 
+	
+	abstract  void calcBonus(double amount); 
+	 String[] showCourses()
+	 {
+		 //return an array of courses;
+		 
+		 return new String[] {"Java FSD","Python with AI","Unit Testing","Automation Testing"};
+	 
+	 } 
+	 abstract  void showProjects(); 
+	 final void showRules(){ 
+	      officeHours();   // call the private method 
+	      //print("leave policies"); 
+	     //  print("od policies"); 
+	     System.out.println("leave policies");
+	     System.out.println("od policies");
+	      
+	}  
+	private void officeHours()
+	{ 
+	  //print("14 hours per day"); 
+		System.out.println("14 hours per day");
+	 }
+	
+} 
+	 
+	
+	
+	

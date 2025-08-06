@@ -1,0 +1,18 @@
+package com.basics.quest1;
+
+public class BookMain {
+
+	public static void main(String[] args) {
+		
+		Book booktitle = new Book("Java Programming","Chenna",600,"Premium");
+		Book booktitle2 =new Book("Pyhton Programming","Kesava",400,"Standard");
+
+		booktitle.getDetails();
+		booktitle.checkBookType();
+		
+		booktitle2.getDetails();
+		booktitle2.checkBookType();
+		
+	}
+
+}

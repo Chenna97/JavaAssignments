@@ -1,0 +1,44 @@
+package com.basics.quest2;
+
+public class Bank {
+	
+	double balance;
+	
+	
+	
+	
+	 public Bank(double balance) {
+		super();
+		this.balance = balance;
+	}
+
+	 void withdraw(double amount) {
+		 
+		 if (amount > balance) {
+	            System.out.println("Insufficient balance. Withdrawal failed.");
+	        } else if (amount <= 0) {
+	            System.out.println("Invalid amount. Withdrawal failed.");
+	        } else {
+	            balance -= amount;
+	            System.out.println("Withdrawal successful. $" + amount + " withdrawn.");
+	        }
+		 
+		 
+	 }
+	 
+	 void deposit(double amount) {
+		 
+		 if (amount <= 0) {
+	            System.out.println("Invalid amount. Deposit failed.");
+	        } else {
+	            balance += amount;
+	            System.out.println("Deposit successful. $" + amount + " deposited.");
+	        }
+		 
+	 }
+	 
+	 double getBalance(){
+		 
+		 return balance;
+	 }
+}

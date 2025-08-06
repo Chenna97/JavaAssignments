@@ -1,0 +1,20 @@
+package com.basics.quest2;
+
+public class Bank {
+	
+	double balance;
+	
+	 void withdraw(double amount) {
+		 
+		 if(balance > 0) {
+			 
+		 }
+		 
+	 }
+	 
+	 void deposit(double amount) {
+		 
+		 
+		 
+	 }
+}

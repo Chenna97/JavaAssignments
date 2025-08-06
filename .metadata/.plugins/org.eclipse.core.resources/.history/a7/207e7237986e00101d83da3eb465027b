@@ -1,0 +1,12 @@
+package com.basics.quest5;
+
+public class Mobile {
+	
+	String model;
+	String brand;
+	String color;
+	
+	
+	
+
+}

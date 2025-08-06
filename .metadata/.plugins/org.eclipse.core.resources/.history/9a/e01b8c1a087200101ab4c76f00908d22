@@ -1,0 +1,13 @@
+package com.inher.quest4;
+
+public class WhatsappCommunciation extends Communication{
+	
+	  void sendMessage()
+	  { 
+		  //print(communication using whatsapp
+			
+		  System.out.println(" communication using whatsapp ");
+	  
+	  }
+
+}

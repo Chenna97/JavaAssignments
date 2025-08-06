@@ -1,0 +1,21 @@
+package com.inher.quest4;
+
+import java.util.Scanner;
+
+public class CommMain {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		 System.out.println("Choose communication type :");
+	        System.out.println("1. Cube");
+	        System.out.println("2. Cuboid");
+	        System.out.println("3. Oval ");
+	        System.out.println("4. Cylinder");
+	        System.out.print("Enter choice (1-4): ");
+
+	}
+
+}

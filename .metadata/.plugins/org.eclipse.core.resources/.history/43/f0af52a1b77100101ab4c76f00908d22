@@ -1,0 +1,36 @@
+package com.inher.quest2;
+
+public class Savings extends Account {
+
+	public Savings(double balance) {
+		super(balance);
+		
+	}
+	
+	
+	
+	@Override
+	void withdraw(double amount)
+	{
+		System.out.println("Savings Account Details :: ");
+		
+		if(balance < amount) {
+			System.out.println("Insufficient Balance");
+		}
+		else {
+			balance -=amount;
+			System.out.println("Total balance after withdraw is :: " + balance);
+		}
+	} 
+	
+	@Override
+	void deposit(double amount)
+	{
+		
+			balance +=amount;
+			System.out.println("Total balance after deposit is :: " + balance);
+		
+		
+	} 
+
+}

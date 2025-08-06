@@ -1,0 +1,14 @@
+package com.inher.quest3;
+
+public class Cuboid extends Figures {
+	
+	
+	@Override
+void volume(int x ,int y )
+	
+	{
+		System.out.println("Volume of cuboid  is ..  "+x*y*x );
+		
+	} 
+
+}

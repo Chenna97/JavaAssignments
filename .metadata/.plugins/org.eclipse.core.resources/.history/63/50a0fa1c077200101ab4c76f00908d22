@@ -1,0 +1,19 @@
+package com.inher.quest4;
+
+public class SMSCommunciation extends Communication {
+	
+	void messageLength()
+	{ //print (short messages of up to 160 characters  )
+		System.out.println("short messages of up to 160 characters");
+	} 
+	void sendMessage()
+	
+	{ 
+		//print(communication through short messaging service)
+		
+		System.out.println("communication through short messaging service");
+		
+	}  
+	 
+
+}

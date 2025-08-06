@@ -1,0 +1,48 @@
+package com.inher.quest2;
+
+import java.util.Scanner;
+
+public class ATMMain {
+
+	public static void main(String[] args) {
+		
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the Balance account in your Union Bank account");
+		double balance= sc.nextDouble();
+		System.out.println("Select the account type as Saving /Current account");
+		String accountchoice = sc.next() ;
+		double amount= 0.0;
+		
+		switch (accountchoice.toLowerCase()) {
+		
+		case "saving":
+			System.out.println("Enter the amount to withdraw/deposit from Savings account");
+			amount=sc.nextDouble();
+			System.out.println("Withdraw amount from Saving account is  " +amount);	
+			Account savingaccount = new Savings(amount);
+			
+			savingaccount .deposit(amount);
+			savingaccount.withdraw(amount);
+			savingaccount.getBalance();
+			
+			
+		
+		
+		
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		sc.close();
+		
+		
+
+	}
+
+}

@@ -1,0 +1,43 @@
+package com.training.scan;
+
+import java.util.Scanner;
+
+public class MaxOccuuranceLetter {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Eneter Word : ");
+		
+		String word = sc.next().toLowerCase();
+		
+		int[] freq =  new int[26];
+		
+		for(char c : word.toCharArray()) {
+			
+			if(Character.isLetter(c)) {
+				freq[c - 'a']++;
+				System.out.println(freq);
+			}
+		}
+			int count = 0;
+			int maxchar = ' ';
+			
+			for(int i= 0 ; i< 26 ; i++) {
+				
+				if(freq[i]< count) {
+					count= freq[i];
+					maxchar = (char) (i + 'a');
+					
+				}
+			}
+			if (count > 0) {
+	            System.out.println("The letter with maximum occurrence is: '" + maxchar + "' (" + count + " times)");
+	        } else {
+	            System.out.println("No letters found in the input.");
+	        }	
+
+	}
+
+}

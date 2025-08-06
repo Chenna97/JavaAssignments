@@ -1,0 +1,16 @@
+package com.over.quest2;
+
+public class MessengerMain {
+
+	public static void main(String[] args) {
+		
+		Messenger message = new Messenger ();
+		
+		message.sendMail("Hi");
+		
+		
+		
+
+	}
+
+}

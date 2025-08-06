@@ -1,0 +1,51 @@
+package com.inher.quest3;
+
+import java.util.Scanner;
+
+public class OverMain {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+        Figures fig;
+
+        System.out.println("Choose a figure to calculate volume:");
+        System.out.println("1. Cube");
+        System.out.println("2. Cuboid");
+        System.out.println("3. Oval ");
+        System.out.println("4. Cylinder");
+        System.out.print("Enter choice (1-4): ");
+        int choice = sc.nextInt();
+
+        System.out.print("Enter value of x (e.g., side or radius1 or length): ");
+        int x = sc.nextInt();
+        System.out.print("Enter value of y (e.g., radius2 or breadth or height): ");
+        int y = sc.nextInt();
+
+        switch (choice) {
+            case 1:
+                fig = new Cube();
+                fig.volume(x, y); // y is ignored
+                break;
+            case 2:
+                fig = new Cuboid();
+                fig.volume(x, y); // asks for height
+                break;
+            case 3:
+                fig = new Oval();
+                fig.volume(x, y); // asks for third radius
+                break;
+            case 4:
+                fig = new Cylinder();
+                fig.volume(x, y); // x = radius, y = height
+                break;
+            default:
+                System.out.println("Invalid choice.");
+        }
+
+        sc.close();
+		
+
+	}
+
+}

@@ -1,0 +1,69 @@
+package com.abs.quest1;
+
+import java.util.Scanner;
+
+public class DemoAbs {
+
+	@SuppressWarnings("null")
+	public static void main(String[] args) {
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		String choice = null;
+		
+		System.out.println("Enter your choice as M for Manager / T for TeamLead / D for Developer ");
+		
+		choice=sc.next();
+		
+		Employee employee = null;
+		
+		switch (choice.toLowerCase()){
+			
+		case "M":
+			employee= new Manager("ChennaKesava",15000.0,5124,"Peoject Manager");
+			employee.calcBonus(15000);
+			employee.showProjects();
+			employee.printDetails();
+			
+			Manager manager = (Manager) employee;
+			
+			manager.funClub();
+			break;
+		case "T":
+			TeamLead teamLead = (TeamLead) employee;
+			
+			teamLead.calcBonus(12000.0);
+			teamLead.corporateServices();
+			break;
+			
+		case 	"D":
+			
+			employee= new Developer("Anudeep",12000,51426,new String[]{"Dancing","Reading Books","Palying"});
+			
+			employee.showProjects();
+			employee.printDetails();
+			
+			Developer developer = (Developer )employee;
+			
+			developer.calcBonus(10000);
+			developer.showHobbies();
+			
+			break;
+			
+		default:
+			
+			System.out.println("Invalid Option ");
+			
+			
+		}
+		
+		
+		sc.close();
+		
+		
+		
+	}
+
+}

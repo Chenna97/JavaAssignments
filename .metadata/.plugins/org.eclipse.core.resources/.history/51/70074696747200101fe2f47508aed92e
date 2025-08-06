@@ -1,0 +1,11 @@
+package com.abs.quest1;
+
+public abstract class Employee {
+
+	String empName;
+	double salary;
+	int empId; 
+	  final String COMPANYNAME="ICIC"; 
+	
+	
+}

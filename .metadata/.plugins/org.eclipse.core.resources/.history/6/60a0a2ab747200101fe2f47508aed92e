@@ -1,0 +1,28 @@
+package com.abs.quest1;
+
+public abstract class Employee {
+
+	String empName;
+	double salary;
+	int empId; 
+	final String COMPANYNAME="ICIC";
+	
+	public Employee(String empName, double salary, int empId) {
+		super();
+		this.empName = empName;
+		this.salary = salary;
+		this.empId = empId;
+	} 
+	
+	void printDetails()
+	{
+		//print all the instance variables
+		System.out.println("Employee Name is ::" + empName);
+		System.out.println("Salary of Employee is :: " + salary);
+		System.out.println("Employee ID is :: "+ empId);
+		System.out.println("Company Name is :: "+ COMPANYNAME);
+	
+	} 
+	
+	
+}

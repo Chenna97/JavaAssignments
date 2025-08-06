@@ -1,0 +1,73 @@
+package com.inher.quest2;
+
+import java.util.Scanner;
+
+public class ATMMain {
+
+	public static void main(String[] args) {
+		
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the Balance account in your Union Bank account");
+		double balance= sc.nextDouble();
+		System.out.println("Initial Balance is :: " + balance);
+		Account account;
+		System.out.println("Welcome to Virtual ATM");
+        System.out.println("Choose Account Type: ");
+        System.out.println("1. Savings");
+        System.out.println("2. Current");
+        int accChoice = sc.nextInt();
+        if (accChoice == 1) {
+            account = new Savings(balance);
+        } else if (accChoice == 2) {
+            account = new Current(balance);
+        } else {
+            System.out.println("Invalid account type selected.");
+            sc.close();
+            return;
+        }
+
+		
+		System.out.println("Enter the amount to withdraw/deposit from your account");
+		
+		
+		 int select ;
+	        do {
+	            System.out.println("\nATM Menu:");
+	            System.out.println("1. Deposit");
+	            System.out.println("2. Withdraw");
+	            System.out.println("3. Check Balance");
+	            System.out.println("4. Exit");
+	            System.out.print("Select your account services ");
+	            select = sc.nextInt();
+
+	            switch (select) {
+	                case 1:
+	                    System.out.print("Enter amount to deposit: ");
+	                    double depositAmount = sc.nextDouble();
+	                    account.deposit(depositAmount);
+	                    break;
+	                case 2:
+	                    System.out.print("Enter amount to withdraw: ");
+	                    double withdrawAmount = sc.nextDouble();
+	                    account.withdraw(withdrawAmount);
+	                    break;
+	                case 3:
+	                    System.out.println("Current Balance: " + account.getBalance());
+	                    break;
+	                case 4:
+	                    System.out.println("Thank you for using Virtual ATM!");
+	                    break;
+	                default:
+	                    System.out.println("Invalid option.");
+	            }
+	        } while (select != 4);
+
+	        sc.close();
+		
+		
+		
+		
+
+	}
+
+}
