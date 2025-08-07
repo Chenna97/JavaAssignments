@@ -1,27 +1,18 @@
 package com.abs.quest1;
 
-import java.util.Scanner;
 
 public abstract class TeamLead extends Employee {
 
 	public TeamLead(String empName, double salary, int empId) {
 		super(empName, salary, empId);
-		// TODO Auto-generated constructor stub
+		
 	}
 	
 	
 	@Override
 	void calcBonus(double amount) {
-		
-		Scanner sc=new  Scanner(System.in);
-		System.out.println("Enter the bounus of TeamLead to calculate :: ");
-		double bonus = sc.nextDouble();
-		
-		amount+= bonus;
-		
-		System.out.println("Calculate Bonus "+amount);
-		
-		sc.close();
+		amount+= salary;
+		System.out.println("Team Lead Bonus: " + (amount * 0.15));
 		
 	}
 	void corporateServices()

@@ -5,7 +5,7 @@ public abstract class Employee {
 	String empName;
 	double salary;
 	int empId; 
-	final String COMPANYNAME="";
+	final String COMPANYNAME="ABC";
 	
 	public Employee(String empName, double salary, int empId) {
 		super();
