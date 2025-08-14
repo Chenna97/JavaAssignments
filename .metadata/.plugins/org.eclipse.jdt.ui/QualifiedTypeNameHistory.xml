@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="com.basics.quest4.Training"/>
@@ -25,7 +24,6 @@
     <fullyQualifiedTypeName name="com.abs.quest1.TeamLead"/>
     <fullyQualifiedTypeName name="java.lang.Deprecated"/>
     <fullyQualifiedTypeName name="com.abs.quest1.Developer"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="com.training.ipractice.ICalculator"/>
     <fullyQualifiedTypeName name="com.training.ipractice.BasicCalculator"/>
     <fullyQualifiedTypeName name="com.training.ipractice.ScientificCal"/>
@@ -44,14 +42,22 @@
     <fullyQualifiedTypeName name="com.training.quest3.RarCompressor"/>
     <fullyQualifiedTypeName name="java.awt.image.ImageConsumer"/>
     <fullyQualifiedTypeName name="com.training.quest4.WindowsMediaPlayer"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.training.quest4.WindowsMediaPlayer11"/>
     <fullyQualifiedTypeName name="com.training.quest4.IMediaPlayer"/>
     <fullyQualifiedTypeName name="com.training.quest4.VLCMediaPlayer"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="com.training.quest5.IFeaturePhone"/>
     <fullyQualifiedTypeName name="com.training.quest5.BasicMobile"/>
     <fullyQualifiedTypeName name="com.training.quest5.TouchScreenMobile"/>
     <fullyQualifiedTypeName name="com.training.quest5.ISmartPhone"/>
     <fullyQualifiedTypeName name="com.training.quest6.ICuisine"/>
+    <fullyQualifiedTypeName name="com.training.ipractice2.ICalculator"/>
+    <fullyQualifiedTypeName name="com.training.ipractice3.IMenu"/>
+    <fullyQualifiedTypeName name="com.training.quest1.IShape"/>
+    <fullyQualifiedTypeName name="com.training.quest2.ICalculator"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="com.training.quest3.IMenu"/>
+    <fullyQualifiedTypeName name="com.training.quest6.ICourses"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.userapp.service.IValidationService"/>
 </qualifiedTypeNameHistroy>
