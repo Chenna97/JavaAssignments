@@ -19,10 +19,10 @@ public class Voter {
         try {
             System.out.print("Enter your age: ");
             int age = sc.nextInt();
-            sc.nextLine(); // consume leftover newline
+           
 
             System.out.print("Enter your locality: ");
-            String locality = sc.nextLine();
+            String locality = sc.next();
 
             System.out.print("Enter your voter ID: ");
             int voterId = sc.nextInt();
@@ -33,13 +33,13 @@ public class Voter {
             }
 
         } catch (UnderAgeException e) {
-            System.out.println("Eligibility Error: " + e.getMessage());
+            System.out.println( e.getMessage());
         } catch (LocalityNotFoundException e) {
-            System.out.println("Eligibility Error: " + e.getMessage());
+            System.out.println( e.getMessage());
         } catch (InvalidVoterIDException e) {
-            System.out.println("Eligibility Error: " + e.getMessage());
-        } catch (Exception e) {
-            System.out.println("Unexpected error occurred.");
+            System.out.println( e.getMessage());
+        } catch (NotEligibleException e) {
+            System.out.println("Undefined error not eligible :: ");
         } finally {
             sc.close();
         }
