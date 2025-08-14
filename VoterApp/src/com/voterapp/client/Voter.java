@@ -32,7 +32,7 @@ public class Voter {
                 System.out.println("You are eligible to vote.");
             }
 
-        } catch (UnderAgeException e) {
+        } catch (UnderAgeException e) {   
             System.out.println( e.getMessage());
         } catch (LocalityNotFoundException e) {
             System.out.println( e.getMessage());
